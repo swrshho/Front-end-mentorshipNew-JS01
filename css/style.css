@@ -1,23 +1,109 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+/* flex helper */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main {
   min-height: 100vh;
   min-width: 100vw;
 }
-.form-section{
-  flex: 1;
-  margin-left: 20rem;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.table-section {
-  flex: 4;
+.btn-primary {
+  border: none;
+  background-color: #D35400;
+  color: #ffffff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-table {
-  width: 70%;
-  background-color: #F3F1F1;
-  text-align: center;
-  height: 25rem;
-  padding: 2rem;
-  border-radius: 15px;
+.btn-primary:hover {
+  background-color: #b64900;
+}
+
+.btn-secondry {
+  border: none;
+  background-color: #2980B9;
+  color: #ffffff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-secondry:hover {
+  background-color: #1e608b;
+}
+
+#btn-submit {
+  font-size: 1.6rem;
+  padding: 0.5rem 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.form-section {
+  width: 30%;
 }
 
 h1 {
@@ -35,35 +121,54 @@ input {
   border-radius: 5px;
 }
 
-.btn-primary {
-  border: none;
-  background-color: #D35400;
-  color: #ffffff;
-  padding: 0.5rem 0.7rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-#btn-submit {
-  padding: 0.5rem 2.5rem;
+.table-section {
+  width: 60%;
 }
 
-.btn-primary:hover {
-  background-color: #b64900;
+.table {
+  width: 100%;
+  background-color: #F3F1F1;
+  text-align: center;
+  height: 25rem;
+  padding: 2rem;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (16.66%)[6];
+      grid-template-rows: repeat(6, 16.66%);
+  -ms-grid-columns: (16.66%)[6];
+      grid-template-columns: repeat(6, 16.66%);
 }
 
-.btn-secondry {
-  border: none;
-  background-color: #2980B9;
-  color: #ffffff;
-  padding: 0.5rem 0.7rem;
-  border-radius: 8px;
-  cursor: pointer;
+.table__heading {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 14.31% 21.82% 20.27% 24.48% 9.48% 9.48%;
+      grid-template-columns: 14.31% 21.82% 20.27% 24.48% 9.48% 9.48%;
+  background-color: #BDC3C7;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
 }
 
-.btn-secondry:hover{
-  background-color: #1e608b;
+.table__row {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 14.31% 21.82% 20.27% 24.48% 9.48% 9.48%;
+      grid-template-columns: 14.31% 21.82% 20.27% 24.48% 9.48% 9.48%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 th {
   background-color: #BDC3C7;
 }
+/*# sourceMappingURL=style.css.map */

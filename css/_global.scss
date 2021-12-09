@@ -1,0 +1,41 @@
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  border: none;
+  background-color: #D35400;
+  color: #ffffff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #b64900;
+  }
+}
+
+.btn-secondry {
+  border: none;
+  background-color: #2980B9;
+  color: #ffffff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1e608b;
+  }
+}
+
+#btn-submit {
+  font-size: 1.6rem;
+  padding: 0.5rem 2.5rem;
+  margin-top: 1.5rem;
+}

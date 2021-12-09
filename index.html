@@ -11,91 +11,92 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
     rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
   <title>Js Part 01</title>
 </head>
 <body>
 
   <main class="flex content-center">
-    <div class="form-section flex flex-column">
-      <form action="post" class="flex flex-column">
-        <label for="user-name">User Name</label>
-        <input type="text" name="user-name" id="user-name" class="mb-2">
 
-        <label for="api_key">API Key</label>
-        <input class="mb-2" id="api_key" name="api_key" class="" type="text"  />
+    <div class="container flex jc-sb ai-c">
+      <div class="form-section flex flex-column">
+        <form action="post" class="flex flex-column">
+          <label for="user-name">User Name</label>
+          <input type="text" name="user-name" id="user-name" class="mb-2">
 
-        <label for="api_secret">API Secret</label>
-        <input class="mb-2" id="api_secret" name="api_secret" class="" type="text" />
-      </form>
+          <label for="api_key">API Key</label>
+          <input class="mb-2" id="api_key" name="api_key" class="" type="text"  />
 
-      <div class="flex content-center">
-        <button id="btn-submit" class="btn-primary">Submit</button>
+          <label for="api_secret">API Secret</label>
+          <input class="mb-2" id="api_secret" name="api_secret" class="" type="text" />
+        </form>
+
+        <div class="flex content-center">
+          <button id="btn-submit" class="btn-primary">Submit</button>
+        </div>
       </div>
-    </div>
 
-    <div class="table-section flex flex-column content-center">
-      <h1>API Key Manager</h1>
+      <div class="table-section flex flex-column content-center">
+        <h1>API Key Manager</h1>
 
-      <table>
-        <tr>
-          <th>#</th>
-          <th>User Name</th>
-          <th>API Key</th>
-          <th>API Secret</th>
-          <th></th>
-        </tr>
+        <div class="table">
+           <div class="table__heading">
+            <div class="table__heading-cell">#</div>
+            <div class="table__heading-cell">User Name</div>
+            <div class="table__heading-cell">API Key</div>
+            <div class="table__heading-cell">API Secret</div>
+            <div class="table__heading-cell"></div>
+            <div class="table__heading-cell"></div>
+          </div>
 
-        <tr>
-          <td>1</td>
-          <td>suri</td>
-          <td>askjhd324dsakj</td>
-          <td>sdhf***********p2</td>
-          <td><button class="btn-primary">Delete</button></td>
-          <td><button class="btn-secondry">Edit</button></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>suri</td>
-          <td>askjhd324dsakj</td>
-          <td>sdhf***********p2</td>
-          <td><button class="btn-primary">Delete</button></td>
-          <td><button class="btn-secondry">Edit</button></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>suri</td>
-          <td>askjhd324dsakj</td>
-          <td>sdhf***********p2</td>
-          <td><button class="btn-primary">Delete</button></td>
-          <td><button class="btn-secondry">Edit</button></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>suri</td>
-          <td>askjhd324dsakj</td>
-          <td>sdhf***********p2</td>
-          <td><button class="btn-primary">Delete</button></td>
-          <td><button class="btn-secondry">Edit</button></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>suri</td>
-          <td>askjhd324dsakj</td>
-          <td>sdhf***********p2</td>
-          <td><button class="btn-primary">Delete</button></td>
-          <td><button class="btn-secondry">Edit</button></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>suri</td>
-          <td>askjhd324dsakj</td>
-          <td>sdhf***********p2</td>
-          <td><button class="btn-primary">Delete</button></td>
-          <td><button class="btn-secondry">Edit</button></td>
-        </tr>
-      </table>
+           <div class="table__row">
+            <div class="table__data">1</div>
+            <div class="table__data">suri</div>
+            <div class="table__data">askjhd324dsakj</div>
+            <div class="table__data">sdhf***********p2</div>
+            <div class="table__data"><button class="btn-primary">Delete</button></div>
+            <div class="table__data"><button class="btn-secondry">Edit</button></div>
+          </div>
+
+          <div class="table__row">
+            <div class="table__data">1</div>
+            <div class="table__data">suri</div>
+            <div class="table__data">askjhd324dsakj</div>
+            <div class="table__data">sdhf***********p2</div>
+            <div class="table__data"><button class="btn-primary">Delete</button></div>
+            <div class="table__data"><button class="btn-secondry">Edit</button></div>
+          </div>
+
+          <div class="table__row">
+            <div class="table__data">1</div>
+            <div class="table__data">suri</div>
+            <div class="table__data">askjhd324dsakj</div>
+            <div class="table__data">sdhf***********p2</div>
+            <div class="table__data"><button class="btn-primary">Delete</button></div>
+            <div class="table__data"><button class="btn-secondry">Edit</button></div>
+          </div>
+  
+          <div class="table__row">
+            <div class="table__data">1</div>
+            <div class="table__data">suri</div>
+            <div class="table__data">askjhd324dsakj</div>
+            <div class="table__data">sdhf***********p2</div>
+            <div class="table__data"><button class="btn-primary">Delete</button></div>
+            <div class="table__data"><button class="btn-secondry">Edit</button></div>
+          </div>
+  
+          <div class="table__row">
+            <div class="table__data">1</div>
+            <div class="table__data">suri</div>
+            <div class="table__data">askjhd324dsakj</div>
+            <div class="table__data">sdhf***********p2</div>
+            <div class="table__data"><button class="btn-primary">Delete</button></div>
+            <div class="table__data"><button class="btn-secondry">Edit</button></div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
     
   </main>
